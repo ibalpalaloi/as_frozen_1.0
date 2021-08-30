@@ -450,11 +450,6 @@
 			<div class="row" style="margin-top: 1em;">
 				<div class="col-md-12" style="padding: 0px;">
 					<div class="card" style="width: 100%; padding: 1em; border:none; -webkit-box-shadow: 2px 10px 10px rgb(0 0 0 / 30%); box-shadow: 2px 2px 8px rgb(0 0 0 / 30%);">
-						<div class="row" style="padding-left: 1em; padding-right: 1em; display: flex; justify-content: space-between; align-items: center;">
-							<div style="width: 10em;">
-								<img src="<?=url('/')?>/public/assets/img/menu_bakso.png" style="width: 100%">
-							</div>
-						</div>
 						<div class="row team" style="margin-top: 20px; margin-left: 20px">
 							<button onclick="sub_kategori('semua')" id="sub_kategori_semua" type="button" class="btn btn-danger d-flex align-items-stretch" style="margin: 5px; border-radius: 10px; border: 1px solid red">Semua</button>
 							<button onclick="sub_kategori('ikan')" id="sub_kategori_ikan" type="button" class="btn btn-outline-danger d-flex align-items-stretch" style="margin: 5px; border-radius: 10px; border: 1px solid red">Bakso Ikan</button>
@@ -463,33 +458,7 @@
 						</div>
 						<hr>
 						<div class="row team" style="padding: 1em;" id="div_data_sub_kategori">
-							<div class="flash_sale" style="width: 100%; display: flex; justify-content: flex-start; flex-wrap: wrap;">
-								@php
-								$produk = array('1.jpg','2.jpg','3.jpg','4.jpg','1.jpg','2.jpg','3.jpg','4.jpg');
-								@endphp
-								@for ($i = 0; $i < count($produk); $i++)
-								<div class="d-flex align-items-stretch" style="margin-right: 1em; width: 18%;">
-									<div class="member" style="position: relative;">
-										<div class="member-img">
-											<img src="<?=url('/')?>/public/assets/img/produk/{{$produk[$i]}}" class="img-fluid" alt="">
-										</div>
-										<div class="member-info" style="padding-top: 0.4em; padding-bottom: 0.8em;">
-											<small style="font-family: 'Segoe UI',Roboto;"><s>Rp. 50.000</s>
-												<badge class="badge badge-warning">-50%</badge> 
-											</small>
-											<h4 style="font-family: 'Segoe UI',Roboto;">Rp. 25.000</h4>
-											<span>Fiesta Chicken Nugget</span>
-											<div class="btn btn-danger" style="margin-top: 0.4em; display: flex; justify-content: center; flex-direction: row;">
-												<div>
-													<span class="iconify" data-icon="mdi:cart" style="font-size: 1.3em; color: white;"></span>&nbsp;&nbsp;
-												</div>
-												<div>Beli</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								@endfor
-							</div>
+							@include('sub_kategori_semua')
 						</div>
 					</div>
 				</div>
