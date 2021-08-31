@@ -537,7 +537,7 @@
                     </tbody>
 
                     
-                  </table>
+                </table>
                 <div class="text-right" style="margin-right: 100px; font-weight: 700; font-size: 18px; margin-top: 30px">
                     <p>Biaya Ongkir : <span style="font-size: 22px">17.000</span> </p>
                 </div>

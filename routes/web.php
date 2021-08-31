@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AdminController;
 
 // use DB;
 /*
@@ -23,5 +24,11 @@ Route::get('/flash-sale', [DashboardController::class, 'flash_sale']);
 Route::get('/register', [DashboardController::class, 'register']);
 Route::get('/login', [DashboardController::class, 'login']);
 Route::get('/', [DashboardController::class, 'index']);
+
+// admin
+Route::get('/admin_index', [AdminController::class, 'index']);
+Route::get('admin_daftar_pesanan', [AdminController::class, 'admin_daftar_pesanan']);
+Route::get('admin_packing', [AdminController::class, 'admin_packing']);
+Route::get('admin_dalam_pengantaran', [AdminController::class, 'admin_dalam_pengantaran']);
 
 
