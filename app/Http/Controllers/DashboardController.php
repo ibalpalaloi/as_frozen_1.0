@@ -27,6 +27,10 @@ class DashboardController extends Controller
     	return view('login');
     }
 
+    public function checkout(){
+        return view('checkout');
+    }
+
     public function register(){
     	return view('register');
     }

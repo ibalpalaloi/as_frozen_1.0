@@ -18,6 +18,7 @@ use App\Http\Controllers\DashboardController;
 Route::get('/get_produk_sub_kategori', [DashboardController::class, 'get_produk_sub_kategori']);
 Route::get('/pesanan', [DashboardController::class, 'pesanan']);
 Route::get('/keranjang', [DashboardController::class, 'keranjang']);
+Route::get('/checkout', [DashboardController::class, 'checkout']);
 Route::get('/kategori/{kategori}', [DashboardController::class, 'kategori']);
 Route::get('/flash-sale', [DashboardController::class, 'flash_sale']);
 Route::get('/register', [DashboardController::class, 'register']);

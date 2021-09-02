@@ -379,126 +379,116 @@
 	{{-- modal --}}
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-scrollable">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="exampleModalLabel">Pesanan</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-			<div class="modal-body">
-				<form>
-					<div class="form-group">
-					  <label for="exampleFormControlInput1">Nama Pemesan</label>
-					  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Pemesan" value="Iqbal">
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Nama Penerima</label>
-						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Penerima" value="Fathul">
-					  </div>
-					<div class="form-group">
-					  <label for="exampleFormControlTextarea1">Alamat</label>
-					  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Alamat"></textarea>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlSelect1">Kota</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-						  <option>Palu</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlSelect1">Kecamatan</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-						  <option>Palu Barat</option>
-						  <option>Palu Timur</option>
-						  <option>Palu Selatan</option>
-						  <option>Palu Utara</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlSelect1">Keluarahan</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-						  <option>Kabonena</option>
-						  <option>Tipo</option>
-						  <option>Donggala Kodi</option>
-						  <option>Silae</option>
-						</select>
-					</div>
-				  </form>
-				  <div class="row" style="font-weight: 700">
-					<div class="col">Total pesanan</div>
-					<div class="col text-right">Rp. 50.000</div>
-				  </div>
-				  <div class="row" style="font-weight: 700">
-					<div class="col">Ongkos Kirim</div>
-					<div class="col text-right">Rp. 7.000</div>
-				  </div>
-			</div>
-			<br>
-			<div class="modal-footer justify-content-between" style="font-weight: 700">
-				<div style="font-size: 28px">
-					Total : Rp. 67.000
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Pesanan</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
-				<div>
-					<button type="button" class="btn btn-danger">Pesan</button>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Nama Pemesan</label>
+							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Pemesan" value="Iqbal">
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Nama Penerima</label>
+							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Penerima" value="Fathul">
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Alamat</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Alamat"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Kota</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Palu</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Kecamatan</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Palu Barat</option>
+								<option>Palu Timur</option>
+								<option>Palu Selatan</option>
+								<option>Palu Utara</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Keluarahan</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Kabonena</option>
+								<option>Tipo</option>
+								<option>Donggala Kodi</option>
+								<option>Silae</option>
+							</select>
+						</div>
+					</form>
+					<div class="row" style="font-weight: 700">
+						<div class="col">Total pesanan</div>
+						<div class="col text-right">Rp. 50.000</div>
+					</div>
+					<div class="row" style="font-weight: 700">
+						<div class="col">Ongkos Kirim</div>
+						<div class="col text-right">Rp. 7.000</div>
+					</div>
 				</div>
-				
+				<br>
+				<div class="modal-footer justify-content-between" style="font-weight: 700">
+					<div style="font-size: 28px">
+						Total : Rp. 67.000
+					</div>
+					<div>
+						<button type="button" class="btn btn-danger">Pesan</button>
+					</div>
+
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </div>
+	</div>
 	{{-- end modal --}}
 
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top" style="background: #ec1f25; border-bottom: none; box-shadow:0 1px 1px rgb(0 0 0 / 20%);">
+	<header id="header" class="fixed-top" style="background: white; border-bottom: none; box-shadow:0 1px 1px rgb(0 0 0 / 20%); padding: 1em;">
 		<div class="container d-flex align-items-center">
 			<h1 class="logo mr-auto">
 				<div style="">
 					<img src="<?=url('/')?>/public/assets/img/logo/logo2.png" style="width: 120%;background:#ec1f25;">
 				</div>
 			</h1>
-			<div style="width: 100%; margin-left: 5%; margin-right: 5%;">
-				<div class="shopee-searchbar shopee-searchbar--focus" style="width: 100%;">
-					<div class="shopee-searchbar__main" style="position: relative;">
-						<form role="search" class="shopee-searchbar-input" autocomplete="off">
-							<input aria-label="Jiniso Diskon s/d 80%" class="shopee-searchbar-input__input" maxlength="128" placeholder="Temukan kebutuhanmu disini" autocomplete="off" value="">
-						</form>
-					</div>
-					<button type="button" class="btn btn-solid-primary btn--s btn--inline">
-						<span class="iconify" data-icon="mdi:magnify" style="color: white; font-size: 2em;"></span>
-					</button>
-				</div>
+			<div style="width: 100%; padding-left: 1%; margin-left: 2.5%; margin-right: 5%; border-left: 2px solid #ec1f25;display: flex; align-items: center;">
+				<div style="color: #ec1f25; vertical-align: center; padding-bottom: 0px; line-height: 1em; font-size: 1.4em;">Pesanan</div>
 			</div>
-			<a href="<?=url('/')?>/keranjang" class=""><span class="iconify" data-icon="mdi:cart" style="font-size: 2em; color: white;"></span></a>
 		</div>
 	</header><!-- End Header -->
 
 	<!-- ======= Hero Section ======= -->
-    @php
-        $produk = ['Bakso Ikan', 'Fiesta chicken Nugget', 'Kulit Kebab'];
-        $harga = ['20.000', '30.000', '12.000'];
-        $jumlah = ['2', '3', '2'];
-        $total_harga = ['40.000', '90.000', '24.000'];
-		$status_pesanan = "menunggu konfirmasi";
-		// status_pesanan = ['menunggu konfirmasi', 'packaging', 'telah diantarakan']
-    @endphp
+	@php
+	$produk = ['Bakso Ikan', 'Fiesta chicken Nugget', 'Kulit Kebab'];
+	$harga = ['20.000', '30.000', '12.000'];
+	$jumlah = ['2', '3', '2'];
+	$total_harga = ['40.000', '90.000', '24.000'];
+	$status_pesanan = "menunggu konfirmasi";
+	// status_pesanan = ['menunggu konfirmasi', 'packaging', 'telah diantarakan']
+	@endphp
 	<section id="" class="d-flex align-items-center" style="background: none; ">
 		<div class="container" style="padding-top: 40px;" >
-            <div class="card shadow p-3 mb-5 bg-white rounded">
-				@if ($status_pesanan == "menunggu konfirmasi");
-					<div class="alert alert-primary" style="font-size: 17px" role="alert">
-						Menunggu Konfirmasi Pesanan
-						<div style="float: right">
-							<img src="<?=url('/')?>/public/img/icons/chronometer.png" alt="" width="30px">
-						</div>
+			<div class="card shadow p-3 mb-5 bg-white rounded">
+				@if ($status_pesanan == "menunggu konfirmasi")
+				<div class="alert alert-primary" style="font-size: 17px" role="alert">
+					Menunggu Konfirmasi Pesanan
+					<div style="float: right">
+						<img src="<?=url('/')?>/public/img/icons/chronometer.png" alt="" width="30px">
 					</div>
+				</div>
 				@elseif ($status_pesanan == "packaging")
-					<div class="alert alert-warning"  role="alert">
-						Pesanan Sementara Packaging
-						<div style="float: right">
-							<img src="<?=url('/')?>/public/img/icons/packaging.png" alt="" width="35px">
-						</div>
+				<div class="alert alert-warning"  role="alert">
+					Pesanan Sementara Packaging
+					<div style="float: right">
+						<img src="<?=url('/')?>/public/img/icons/packaging.png" alt="" width="35px">
 					</div>
+				</div>
 				@else
 				<div class="alert alert-success"  role="alert">
 					Pesanan Telah Diantarkan
@@ -507,51 +497,155 @@
 					</div>
 				</div>
 				@endif
-                
-                <table class="table" >
-                    <thead>
-                      <tr>
-                        <th scope="col">Produk</th>
-                        <th scope="col">Jumlah</th>
-                        <th scope="col">Harga satuan</th>
-                        <th scope="col">total harga</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>{{$produk[0]}}</td>
-                            <td>{{$jumlah[0]}}</td>
-                            <td>{{$harga[0]}}</td>
-                            <td>{{$total_harga[0]}}</td>
-                        </tr>
-                        @for ($i=0; $i<count($produk)-1; $i++)
-                        <tr>
-                            <td>{{$produk[$i+1]}}</td>
-                            <td>{{$jumlah[$i+1]}}</td>
-                            <td>{{$harga[$i+1]}}</td>
-                            <td>{{$total_harga[$i+1]}}</td>
-                        </tr>
-                        @endfor
-                        <tr style="font-weight: 700">
-                        </tr>
-                    </tbody>
 
-                    
-                  </table>
-                <div class="text-right" style="margin-right: 100px; font-weight: 700; font-size: 18px; margin-top: 30px">
-                    <p>Biaya Ongkir : <span style="font-size: 22px">17.000</span> </p>
-                </div>
-                <div class="text-right" style="margin-right: 100px; font-weight: 700; font-size: 18px;">
-                    <p>Total pesanan : <span style="font-size: 25px; color: #ec1f25">Rp. 171.000</span></p>
-                </div>
-                <div class="template-demo" style="display: flex;">
+				<table class="table" >
+					<thead>
+						<th style=""></th>
+						<th style="text-align: center;">Harga Satuan</th>
+						<th style="text-align: center;">Jumlah</th>
+						<th style="text-align: center;">Subtotal</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div style="width: 100%; display: flex; margin-bottom: 0em;">
+									<div style="width: 10%;">
+										<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+									</div>
+									<div style="width: 85%; margin-left: 1em; display: flex; align-items: center;">
+										Fiesta Chicken Nugget
+									</div>
+								</div>
+							</td>
+							<td>
+								<div style="display: flex; justify-content: space-between;">
+									<div>Rp.</div> <div>27.000</div>
+								</div>
+							</td>
+							<td style="text-align: center;">1</td>
+							<td>
+								<div style="display: flex; justify-content: space-between;">
+									<div>Rp.</div> <div>27.000</div>
+								</div>									
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div style="width: 100%; display: flex; margin-bottom: 0em;">
+									<div style="width: 10%;">
+										<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+									</div>
+									<div style="width: 85%; margin-left: 1em; display: flex; align-items: center;">
+										Fiesta Chicken Nugget
+									</div>
+								</div>
+							</td>
+							<td>
+								<div style="display: flex; justify-content: space-between;">
+									<div>Rp.</div> <div>27.000</div>
+								</div>
+							</td>
+							<td style="text-align: center;">1</td>
+							<td>
+								<div style="display: flex; justify-content: space-between;">
+									<div>Rp.</div> <div>27.000</div>
+								</div>									
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div style="width: 100%; display: flex; margin-bottom: 0em;">
+									<div style="width: 10%;">
+										<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+									</div>
+									<div style="width: 85%; margin-left: 1em; display: flex; align-items: center;">
+										Fiesta Chicken Nugget
+									</div>
+								</div>
+							</td>
+							<td>
+								<div style="display: flex; justify-content: space-between;">
+									<div>Rp.</div> <div>27.000</div>
+								</div>
+							</td>
+							<td style="text-align: center;">1</td>
+							<td>
+								<div style="display: flex; justify-content: space-between;">
+									<div>Rp.</div> <div>27.000</div>
+								</div>									
+							</td>
+						</tr>
+					</tbody>							
+				</table>
+				<div class="row" style="margin-left: 0.5em;margin-right: 0.5em;">
+					<div class="col-md-4">
+						<b>Diantarkan ke alamat</b><br>
+						Fathul | (+62 851 5628 9855)<br>
+						Jl. Jalur Gaza No. 9 Palu<br>
+						Kabonena, Palu Barat, Kota Palu <br>
+					</div>
+					<div class="col-md-4">
+						<b>Transfer melalui</b><br>
+						<div class="checkout-bank-transfer-item__card" style="display: flex;">
+							<div class="checkout-bank-transfer-item__icon-container">
+								<img src="https://mall.shopee.co.id/static/images/img_bankid_bni.png" class="checkout-bank-transfer-item__icon" style="width: 2em; margin-right: 1em; width: 4em;">
+							</div>
+							<div>
+								<div class="checkout-bank-transfer-item__main" style="line-height: 0.8em;">
+									Bank BNI
+								</div>
+								<div class="checkout-bank-transfer-item__description">
+									<small>Perlu upload bukti transfer</small>
+								</div>
+								<div>(Dicek Manual)</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4" style="display: flex;">
+						<img src="<?=url('/')?>/public/qrcode.png" style="width: 6em;">
+						<div style="margin-top: 0.2em;width: 100%;">
+							<div class="row">
+								<div class="col-md-6">		
+									Subtotal
+								</div>
+								<div class="col-md-6" style="display: flex; justify-content: space-between;">		
+									<div>: Rp.</div>
+									<div>90.000</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-md-6">		
+									Ongkir
+								</div>
+								<div class="col-md-6" style="display: flex; justify-content: space-between;">		
+									<div>: Rp.</div>
+									<div>7.000</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">		
+									<b>Total</b>
+								</div>
+								<div class="col-md-6" style="display: flex; justify-content: space-between;">		
+									<div>: Rp.</div>
+									<div><b>97.000</b></div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="template-demo" style="display: flex;">
 					@if ($status_pesanan != "telah diantarakan")
-						<a href="<?=url('/keranjang')?>" type="button" class="btn btn-danger btn-lg" style="margin: 10px">Batalkan</a>
+					<a href="<?=url('/keranjang')?>" type="button" class="btn btn-danger btn-lg" style="margin: 10px">Batalkan</a>
 
 					@endif
-                    <button onclick="hubungi_penjual()" type="button" class="btn btn-success" style="margin: 10px">Hubungi Penjual</button>
-                </div>
-            </div>
+					<button onclick="hubungi_penjual()" type="button" class="btn btn-success" style="margin: 10px">Hubungi Penjual</button>
+				</div>
+			</div>
 		</div>
 	</section><!-- End Hero -->
 

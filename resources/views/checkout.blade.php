@@ -494,7 +494,7 @@
 				</div>
 			</h1>
 			<div style="width: 100%; padding-left: 1%; margin-left: 2.5%; margin-right: 5%; border-left: 2px solid #ec1f25;display: flex; align-items: center;">
-				<div style="color: #ec1f25; vertical-align: center; padding-bottom: 0px; line-height: 1em; font-size: 1.4em;">Keranjang Belanja</div>
+				<div style="color: #ec1f25; vertical-align: center; padding-bottom: 0px; line-height: 1em; font-size: 1.4em;">Checkout</div>
 			</div>
 		</div>
 	</header><!-- End Header -->
@@ -502,75 +502,205 @@
 	<!-- ======= Hero Section ======= -->
 	<section id="hero" class="d-flex align-items-center" style="background: none; ">
 		<div class="container" style="padding-top: 1em;">
-			<div class="row">
-				<div class="col-8">
+			<div class="row" style="display: flex; justify-content: center;">
+				<div class="col-12">
 					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;">
-						<div class="row" style="padding: 0.5em 1em;">
-							@for ($i = 0; $i < 3; $i++)
-							<div class="col-md-1" style="display: flex;justify-content: center; align-items: center;">
-								<div class="icheck-danger d-inline">
-									<input type="checkbox" id="checkboxPrimary{{$i}}" checked>
-									<label for="checkboxPrimary{{$i}}">
+						Produk Dipesan
+						<table>
+							<thead>
+								<th style=""></th>
+								<th style="text-align: center;">Harga Satuan</th>
+								<th style="text-align: center;">Jumlah</th>
+								<th style="text-align: center;">Subtotal</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div style="width: 100%; display: flex; margin-bottom: 0.5em;">
+											<div style="width: 12%;">
+												<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+											</div>
+											<div style="width: 85%; margin-left: 1em; display: flex; align-items: center;">
+												Fiesta Chicken Nugget
+											</div>
+										</div>
+									</td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<div>Rp.</div> <div>27.000</div>
+										</div>
+									</td>
+									<td style="text-align: center;">1</td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<div>Rp.</div> <div>27.000</div>
+										</div>									
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="width: 100%; display: flex; margin-bottom: 0.5em;">
+											<div style="width: 12%;">
+												<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+											</div>
+											<div style="width: 85%; margin-left: 1em; display: flex; align-items: center;">
+												Fiesta Chicken Nugget
+											</div>
+										</div>
+									</td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<div>Rp.</div> <div>27.000</div>
+										</div>
+									</td>
+									<td style="text-align: center;">1</td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<div>Rp.</div> <div>27.000</div>
+										</div>									
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="width: 100%; display: flex; margin-bottom: 0.5em;">
+											<div style="width: 12%;">
+												<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+											</div>
+											<div style="width: 85%; margin-left: 1em; display: flex; align-items: center;">
+												Fiesta Chicken Nugget
+											</div>
+										</div>
+									</td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<div>Rp.</div> <div>27.000</div>
+										</div>
+									</td>
+									<td style="text-align: center;">1</td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<div>Rp.</div> <div>27.000</div>
+										</div>									
+									</td>
+								</tr>
+
+							</tbody>							
+						</table>
+					</div>
+					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;">
+						<div>Metode Pengantaran</div>
+						<div style="display: flex; margin-top: 0.5em;">
+							<div class="btn btn-outline-danger" id="btn_ambil_sendiri" style="border: 1px solid #dc3545;" onclick="metode_pengantaran('ambil')">Ambil Sendiri</div>
+							<div class="btn btn-outline-danger" id="btn_diantarkan" style="border: 1px solid #dc3545; margin-left: 0.5em;" onclick="metode_pengantaran('diantarkan')">Diantarakan</div>
+						</div>
+					</div>
+					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;" hidden id="toko_as_frozen">
+						<div style="display: flex;">
+							<svg height="18" viewBox="0 0 12 16" width="18" class="shopee-svg-icon icon-location-marker" style="margin-top: 0.3em;"><path d="M6 3.2c1.506 0 2.727 1.195 2.727 2.667 0 1.473-1.22 2.666-2.727 2.666S3.273 7.34 3.273 5.867C3.273 4.395 4.493 3.2 6 3.2zM0 6c0-3.315 2.686-6 6-6s6 2.685 6 6c0 2.498-1.964 5.742-6 9.933C1.613 11.743 0 8.498 0 6z" fill-rule="evenodd"></path>
+							</svg>
+							<div style="margin-left: 1em;">
+								<b>Toko Asfrozen</b><br>
+								Jl. Mandala No. 1, Birobuli Utara, Kec, Palu Selatan<br>
+								Kota Palu, Sulawesi Tengah, 94111<br>
+								<a href="https://www.google.com/maps/place/AS+FROZEN+PALU/@-0.9144415,119.8997595,16.92z/data=!4m5!3m4!1s0x2d8bef83f63e3983:0x39f3cc45d0d5d04!8m2!3d-0.9141016!4d119.8988105">Lihat maps</a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;" id="alamat_penerima" hidden>
+						<div style="display: flex;">
+							<svg height="18" viewBox="0 0 12 16" width="18" class="shopee-svg-icon icon-location-marker" style="margin-top: 0.3em;"><path d="M6 3.2c1.506 0 2.727 1.195 2.727 2.667 0 1.473-1.22 2.666-2.727 2.666S3.273 7.34 3.273 5.867C3.273 4.395 4.493 3.2 6 3.2zM0 6c0-3.315 2.686-6 6-6s6 2.685 6 6c0 2.498-1.964 5.742-6 9.933C1.613 11.743 0 8.498 0 6z" fill-rule="evenodd"></path>
+							</svg>
+							<div style="margin-left: 1em;">
+								<b>Alamat Penerima&nbsp;(Ongkir : Rp. 15.000)</b><br>
+								Fathul | (+62 851 5628 9855)<br>
+								Jl. Jalur Gaza No. 9 Palu<br>
+								Kabonena, Palu Barat, Kota Palu <br>
+							</div>
+							<div style="position: absolute; right: 2em; top: 40%;">Ubah data</div>
+						</div>
+					</div>
+
+					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;">
+						<div>Metode Pembayaran</div>
+						<div style="display: flex; margin-top: 0.5em;">
+							<div id="btn_cod" onclick="metode_pembayaran('cod')" class="btn btn-outline-danger" style="border: 1px solid #dc3545;">COD</div>
+							<div id="btn_transfer" onclick="metode_pembayaran('transfer')" class="btn btn-outline-danger" style="margin-left: 0.5em; border: 1px solid #dc3545;">Transfer</div>
+						</div>
+						<div id="list_bank" hidden>
+							@php
+							$bank = array("Bank BCA", "Bank Mandiri", "Bank BNI", "Bank BRI", "Bank BSI");
+							$bank_icon = array("img_bankid_bca.png", "img_bankid_mandiri.png", 'img_bankid_bni.png', "img_bankid_bri.png","img_bankid_bsm.png");
+							@endphp
+							@for ($i = 0; $i < count($bank); $i++)
+							<div class="stardust-radio__content" style="display: flex; margin-top: 1em;">
+								<div class="icheck-danger d-inline" style="width: 10%;">
+									<input type="checkbox" id="checkboxPrimary1" @if ($i == 0) checked @endif>
+									<label for="checkboxPrimary1">
 									</label>
 								</div>
-							</div>
-							<div class="col-2">
-								<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
-							</div>
-							<div class="col-5">
-								<div class="row">Fiesta Chicken Nugget</div>
-								<div class="row text-muted">23.000</div>
-							</div>
-							<div class="col-2" style="padding: 0px; display: flex; align-items: center;">
-								<div style="display: flex; align-items: flex-start; padding: 0px; justify-content: flex-start; width: 100%;">
-									<div class="btn btn-danger" style="color: black; color: white; width: 25%; border-radius: 0px;"> - </div>
-									<div style="width: 50%; border-radius: 0px;" class="btn">2</div>
-									<div class="btn btn-danger" style="color: black; color: white; width: 25%; border-radius: 0px;"> + </div>
-								</div>
-							</div>
-							<div class="col-2" style="display: flex; align-items: center; justify-content: space-between; padding-right: 0px;">
-								<span>Rp.</span> <span>46.000</span>
-							</div>
-							@endfor
-						</div>
-					</div>
-					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;">
-						<div class="row" style="padding: 0em 1em;">
-							<div class="col-8"></div>
-							<div class="col-2">Sub Total</div>
-							<div class="col-2" style="display: flex; justify-content: space-between; padding-right: 0px;">
-								<div>Rp.</div> <div>250.000</div>
-							</div>
-						</div>
-					</div>
-					<a href="<?=url('/')?>/checkout" class="btn btn-danger" style="padding: 0.8em; font-size: 0.8em;">Proses Pembayaran</a>
-				</div>
-				<div class="col-4">
-					<div class="card shadow p-3 mb-5 bg-white rounded">
-						<div class="d-flex align-items-stretch slick-slide slick-active" style="margin-right: 1em; width: 213px;width: 100%; display: flex; flex-wrap: wrap;" tabindex="0" data-slick-index="1" aria-hidden="false" role="tabpanel" id="slick-slide11">
-							@for ($i = 0; $i < 4; $i++)
-							<div class="member" style="position: relative; width: 50%; padding: 0.5em;">
-								<div class="member-img">
-									<img src="http://localhost/as_frozen/public/assets/img/produk/2.jpg" class="img-fluid" alt="">
-								</div>
-								<div class="member-info" style="padding-top: 0.4em;">
-									<small style="font-family: 'Segoe UI',Roboto; font-size: 0.7em;"><s>Rp. 50.000</s>
-										<badge class="badge badge-warning" style="font-size: 0.9em;">-50%</badge> 
-									</small>
-									<h6 style="font-family: 'Segoe UI',Roboto; line-height: 0.7em; font-size: 0.9em;">Rp. 25.000</h6>
-									<span style="font-size: 0.8em; line-height: 0.5em;"> {{substr("Fiesta Chicken Nugget", 0, 18) }} ....</span>
-									<div class="btn btn-outline-danger" style="margin-top: 0.4em; display: flex; justify-content: center; flex-direction: row; border: 1px solid #dc3545;">
-										<div>
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="mdi:cart" style="font-size: 1.3em; color:#dc3545;"><path d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2z" fill="currentColor"></path></svg>&nbsp;&nbsp;
+								<div class="checkout-bank-transfer-item__card" style="display: flex;">
+									<div class="checkout-bank-transfer-item__icon-container">
+										<img src="https://mall.shopee.co.id/static/images/{{$bank_icon[$i]}}" class="checkout-bank-transfer-item__icon" style="width: 2em; margin-right: 1em;">
+									</div>
+									<div>
+										<div class="checkout-bank-transfer-item__main" style="line-height: 0.8em;">
+											{{$bank[$i]}} (Dicek Manual)
 										</div>
-										<div>Beli</div>
+										<div class="checkout-bank-transfer-item__description">
+											<small>Perlu upload bukti transfer</small>
+										</div>
 									</div>
 								</div>
 							</div>
 							@endfor
+
+
+							<div class="bank-transfer-category__body">
+							</div>				
+						</div>
+					</div>	
+					<div class="card shadow p-3 mb-2 bg-white rounded" style="border: none;">
+						<div class="row">
+							<div class="col-md-8">
+							</div>
+							<div class="col-md-2">
+								Subtotal Produk
+							</div>
+							<div class="col-md-2" style="display: flex; justify-content: flex-end;">
+								<div>Rp.</div><div>90.000</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+							</div>
+							<div class="col-md-2">
+								Ongkos Kirim
+							</div>
+							<div class="col-md-2" style="display: flex; justify-content: flex-end;">
+								<div>Rp.</div><div>7.000</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+							</div>
+							<div class="col-md-2">
+								Total
+							</div>
+							<div class="col-md-2" style="display: flex; justify-content: flex-end;">
+								<h3>Rp. 97.000</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+							</div>
+							<div class="col-md-4">
+								<a href="<?=url('/')?>/pesanan" class="btn btn-danger">Buat Pesanan</a>
+							</div>
 						</div>
 
-					</div>
+					</div>	
 				</div>
 			</div>
 
@@ -681,6 +811,43 @@
 	<script>
 		function modal_pesan(){
 			$('#exampleModal').modal('show');
+		}
+
+		function metode_pengantaran(value){
+			if (value == 'ambil'){
+				$("#toko_as_frozen").prop('hidden', false);
+				$("#alamat_penerima").prop('hidden', true);
+				$("#btn_ambil_sendiri").css('background', '#dc3545');				
+				$("#btn_ambil_sendiri").css('color', 'white');				
+				$("#btn_diantarkan").css('background', 'white');				
+				$("#btn_diantarkan").css('color', '#dc3545');				
+			}
+			else {
+				$("#toko_as_frozen").prop('hidden', true);
+				$("#alamat_penerima").prop('hidden', false);				
+				$("#btn_diantarkan").css('background', '#dc3545');				
+				$("#btn_diantarkan").css('color', 'white');				
+				$("#btn_ambil_sendiri").css('background', 'white');				
+				$("#btn_ambil_sendiri").css('color', '#dc3545');				
+
+			}
+		}
+
+		function metode_pembayaran(value){
+			if (value == 'cod'){
+				$("#btn_cod").css('background', '#dc3545');				
+				$("#btn_cod").css('color', 'white');				
+				$("#btn_transfer").css('background', 'white');				
+				$("#btn_transfer").css('color', '#dc3545');	
+				$("#list_bank").prop('hidden', true);			
+			}
+			else {
+				$("#btn_transfer").css('background', '#dc3545');				
+				$("#btn_transfer").css('color', 'white');				
+				$("#btn_cod").css('background', 'white');				
+				$("#btn_cod").css('color', '#dc3545');								
+				$("#list_bank").prop('hidden', false);			
+			}
 		}
 
 		function ongkos_kirim(){
