@@ -1,7 +1,4 @@
 <div class="flash_sale" style="width: 100%; display: flex; justify-content: flex-start; flex-wrap: wrap;">
-    @php
-    $produk = array('1.jpg','2.jpg','3.jpg','1.jpg','2.jpg');
-    @endphp
     @for ($i = 0; $i < count($produk); $i++)
     <div class="d-flex align-items-stretch" style="margin-right: 1em; width: 18%;">
         <div class="member" style="position: relative;">

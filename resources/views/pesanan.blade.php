@@ -24,7 +24,6 @@
 	<link href="<?=url('/')?>/public/assets/vendor/venobox/venobox.css" rel="stylesheet">
 	<link href="<?=url('/')?>/public/assets/vendor/aos/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?=url('/')?>/public/assets/vendor/slick/slick.css"/>
-	// Add the new slick-theme.css if you want the default styling
 	<link rel="stylesheet" type="text/css" href="<?=url('/')?>/public/assets/vendor/slick/slick-theme.css"/>
 	<!-- Template Main CSS File -->
 	<link href="<?=url('/')?>/public/assets/css/style.css" rel="stylesheet">
@@ -497,6 +496,7 @@
 					</div>
 				</div>
 				@endif
+<<<<<<< HEAD
 
 				<table class="table" >
 					<thead>

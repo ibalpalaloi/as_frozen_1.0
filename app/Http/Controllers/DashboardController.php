@@ -41,7 +41,20 @@ class DashboardController extends Controller
 
     public function get_produk_sub_kategori(Request $request){
         $sub_kategori = $request->sub_kategori;
-        $view = view('bakso_ikan')->render();
+        if($sub_kategori == "semua"){
+            $view = view('sub_kategori_semua')->render();
+        }elseif($sub_kategori == "ikan"){
+            $produk = ['bakso1.jpg', 'bakso2.jpg', 'bakso3.jpg', 'bakso1.jpg', 'bakso2.jpg'];
+            $view = view('bakso_ikan', compact('produk'))->render();
+        }elseif($sub_kategori == "sapi"){
+            $produk = ['daging1.jpg', 'daging2.jpg', 'daging3.jpg', 'daging4.jpg', 'daging1.jpg'];
+            $view = view('bakso_ikan', compact('produk'))->render();
+        }
+        else{
+            $produk = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+            $view = view('bakso_ikan', compact('produk'))->render();
+        }
+        
         return response()->json(['html'=>$view]);
     }
 
