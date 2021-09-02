@@ -490,7 +490,7 @@
 		<div class="container d-flex align-items-center">
 			<h1 class="logo mr-auto">
 				<div style="">
-					<img src="<?=url('/')?>/public/assets/img/logo/logo2.png" style="width: 120%;background:#ec1f25;">
+					<img src="<?=url('/')?>/public/assets/img/logo/frozen_palu_red.png" style="width: 110%;">
 				</div>
 			</h1>
 			<div style="width: 100%; padding-left: 1%; margin-left: 2.5%; margin-right: 5%; border-left: 2px solid #ec1f25;display: flex; align-items: center;">
@@ -515,7 +515,7 @@
 								</div>
 							</div>
 							<div class="col-2">
-								<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em;">
+								<img class="img-fluid" src="<?=url('/')?>/public/assets/img/produk/1.jpg" style="width: 100%; border-radius: 1em; margin-bottom: 0.5em;">
 							</div>
 							<div class="col-5">
 								<div class="row">Fiesta Chicken Nugget</div>

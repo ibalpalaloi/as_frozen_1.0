@@ -399,7 +399,7 @@
 		<div class="modal-dialog modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Pesanan</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Data Penerima</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -461,22 +461,11 @@
 
 						</div>
 					</form>
-					<div class="row" style="font-weight: 700">
-						<div class="col">Total pesanan</div>
-						<div class="col text-right">Rp. 50.000</div>
-					</div>
-					<div class="row" style="font-weight: 700">
-						<div class="col">Ongkos Kirim</div>
-						<div class="col text-right" id="ongkos_kirim">Rp. 7.000</div>
-					</div>
 				</div>
 				<br>
 				<div class="modal-footer justify-content-between" style="font-weight: 700">
-					<div style="font-size: 28px" id="total_pesanan">
-						Total : Rp. 67.000
-					</div>
-					<div>
-						<a href="<?=url('/')?>/pesanan" type="button" class="btn btn-danger">Pesan</a>
+					<div data-dismiss="modal" class="btn btn-danger">
+						Simpan
 					</div>
 
 				</div>
@@ -490,7 +479,7 @@
 		<div class="container d-flex align-items-center">
 			<h1 class="logo mr-auto">
 				<div style="">
-					<img src="<?=url('/')?>/public/assets/img/logo/logo2.png" style="width: 120%;background:#ec1f25;">
+					<img src="<?=url('/')?>/public/assets/img/logo/frozen_palu_red.png" style="width: 110%;">
 				</div>
 			</h1>
 			<div style="width: 100%; padding-left: 1%; margin-left: 2.5%; margin-right: 5%; border-left: 2px solid #ec1f25;display: flex; align-items: center;">
@@ -618,7 +607,7 @@
 								Jl. Jalur Gaza No. 9 Palu<br>
 								Kabonena, Palu Barat, Kota Palu <br>
 							</div>
-							<div style="position: absolute; right: 2em; top: 40%;">Ubah data</div>
+							<div onclick="ubah_data()" style="position: absolute; right: 2em; top: 40%;">Ubah data</div>
 						</div>
 					</div>
 
@@ -679,7 +668,7 @@
 								Ongkos Kirim
 							</div>
 							<div class="col-md-2" style="display: flex; justify-content: flex-end;">
-								<div>Rp.</div><div>7.000</div>
+								<div>Rp.</div><div id="nilai_ongkir">0</div>
 							</div>
 						</div>
 						<div class="row">
@@ -689,7 +678,7 @@
 								Total
 							</div>
 							<div class="col-md-2" style="display: flex; justify-content: flex-end;">
-								<h3>Rp. 97.000</h3>
+								<h3 id="total_biaya">Rp. 90.000</h3>
 							</div>
 						</div>
 						<div class="row">
@@ -813,6 +802,10 @@
 			$('#exampleModal').modal('show');
 		}
 
+		function ubah_data(){
+			$("#exampleModal").modal('show');
+		}
+
 		function metode_pengantaran(value){
 			if (value == 'ambil'){
 				$("#toko_as_frozen").prop('hidden', false);
@@ -820,7 +813,9 @@
 				$("#btn_ambil_sendiri").css('background', '#dc3545');				
 				$("#btn_ambil_sendiri").css('color', 'white');				
 				$("#btn_diantarkan").css('background', 'white');				
-				$("#btn_diantarkan").css('color', '#dc3545');				
+				$("#btn_diantarkan").css('color', '#dc3545');	
+				$("#total_biaya").html("Rp. 90.000");
+				$("#nilai_ongkir").html("0");			
 			}
 			else {
 				$("#toko_as_frozen").prop('hidden', true);
@@ -829,6 +824,9 @@
 				$("#btn_diantarkan").css('color', 'white');				
 				$("#btn_ambil_sendiri").css('background', 'white');				
 				$("#btn_ambil_sendiri").css('color', '#dc3545');				
+				$("#total_biaya").html("Rp. 97.000");
+				$("#nilai_ongkir").html("7.000");			
+
 
 			}
 		}

@@ -24,7 +24,6 @@
 	<link href="<?=url('/')?>/public/assets/vendor/venobox/venobox.css" rel="stylesheet">
 	<link href="<?=url('/')?>/public/assets/vendor/aos/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?=url('/')?>/public/assets/vendor/slick/slick.css"/>
-	// Add the new slick-theme.css if you want the default styling
 	<link rel="stylesheet" type="text/css" href="<?=url('/')?>/public/assets/vendor/slick/slick-theme.css"/>
 	<!-- Template Main CSS File -->
 	<link href="<?=url('/')?>/public/assets/css/style.css" rel="stylesheet">
@@ -481,21 +480,6 @@
 					<img src="<?=url('/')?>/public/assets/img/banner/banner3.jpg" class="d-block w-100" alt="..." style="margin-top: 0.2em;">
 				</div>
 			</div>
-
-			<div style="margin-top: 60px; margin-bottom: 10px">
-				<div class="text-center" style="font-weight: 700; font-size: 30px">
-					<p>Video Kami</p>
-					<hr style="border: 2px solid black; border-radius: 5px; background-color: black">
-				</div>
-				<div class="row" style="margin-top: 20px">
-					<div class="col-6">
-						<iframe width="550" height="300"  src="https://www.youtube.com/embed/hLfYQEcKnxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div class="col-6">
-						<iframe width="550" height="300"  src="https://www.youtube.com/embed/hLfYQEcKnxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
 			
 			<div class="row" style="margin-top: 1em;">
 				<div class="col-md-12" style="padding: 0px;">
@@ -536,6 +520,19 @@
 								@endfor
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 10px">
+				<div class="row" style="margin-top: 20px; padding-left: 0px; padding-right: 0px;  display: flex; justify-content: space-between;">
+					<div style="width: 32%;">
+						<iframe width="100%" height="220"  src="https://www.youtube.com/embed/qNa5vUG4W08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 0.5em;"></iframe>
+					</div>
+					<div style="width: 32%;">
+						<iframe width="100%" height="220"  src="https://www.youtube.com/embed/T5nSwojhgTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 0.5em;"></iframe>
+					</div>
+					<div style="width: 32%;">
+						<iframe width="100%" height="220"  src="https://www.youtube.com/embed/Qqyi1nI1yP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 0.5em;"></iframe>
 					</div>
 				</div>
 			</div>
@@ -676,7 +673,7 @@
 
 	<div id="ck-wrapperWhyBrambang" class="ng-scope" style="background: rgba(255, 255, 255, 0.8);">
 		<div class="mobileOnly" style="margin-top:50px;"></div>
-		<div class="title-index">Keutungan Beli dari Brambang</div>
+		<div class="title-index">Keutungan Beli dari AsFrozen</div>
 		<div id="WhyBrambangContainer" style="padding-left: 0px;">
 			<div style="display: flex; justify-content: space-around;width: 100%;">
 				<div class="wrapperWhyBrambangCard" style=" width: 23%;">
@@ -695,7 +692,7 @@
 					</div>
 					<div class="ck-wrapperWhyBrambang-content sub-ck-wrap">
 						<div class="WhyBrambangTitle WhyBrambangTitle-o">Mutu Terjamin</div>
-						<div class="WhyBrambangSubTitle WhyBrambangSubTitle-o">Kami melakukan kontrol mutu agar produk yang diterima selalu sesuai deskripsi dan foto di Brambang.com.</div>
+						<div class="WhyBrambangSubTitle WhyBrambangSubTitle-o">Kami melakukan kontrol mutu agar produk yang diterima selalu sesuai deskripsi dan foto di AsFrozen.com.</div>
 					</div>
 				</div>
 				<div class="wrapperWhyBrambangCard" style=" width: 23%;">

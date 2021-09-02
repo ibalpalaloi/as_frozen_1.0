@@ -453,7 +453,7 @@
 		<div class="container d-flex align-items-center">
 			<h1 class="logo mr-auto">
 				<div style="">
-					<img src="<?=url('/')?>/public/assets/img/logo/logo2.png" style="width: 120%;background:#ec1f25;">
+					<img src="<?=url('/')?>/public/assets/img/logo/frozen_palu_red.png" style="width: 110%;">
 				</div>
 			</h1>
 			<div style="width: 100%; padding-left: 1%; margin-left: 2.5%; margin-right: 5%; border-left: 2px solid #ec1f25;display: flex; align-items: center;">
@@ -496,8 +496,6 @@
 					</div>
 				</div>
 				@endif
-<<<<<<< HEAD
-
 				<table class="table" >
 					<thead>
 						<th style=""></th>
@@ -756,7 +754,7 @@
 		}
 
 		function hubungi_penjual(){
-			var message = "Hallo AsFrozen";
+			var message = "Hallo AsFrozen saya telah memesan produk dengan link ID_pesanan=1880148014";
 
 			var walink = 'https://wa.me/'+ "+628114588477" +'?text=' + encodeURI(message);
 			window.open(walink);
