@@ -468,7 +468,7 @@
 	$harga = ['20.000', '30.000', '12.000'];
 	$jumlah = ['2', '3', '2'];
 	$total_harga = ['40.000', '90.000', '24.000'];
-	$status_pesanan = "menunggu konfirmasi";
+	$status_pesanan = "packaging";
 	// status_pesanan = ['menunggu konfirmasi', 'packaging', 'telah diantarakan']
 	@endphp
 	<section id="" class="d-flex align-items-center" style="background: none; ">

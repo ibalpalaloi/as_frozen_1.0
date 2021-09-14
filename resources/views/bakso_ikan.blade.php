@@ -3,7 +3,7 @@
     <div class="d-flex align-items-stretch" style="margin-right: 1em; width: 18%;">
         <div class="member" style="position: relative;">
             <div class="member-img">
-                <img src="<?=url('/')?>/public/assets/img/produk/{{$produk[$i]}}" class="img-fluid" alt="">
+                <img src="<?=url('/')?>/public/assets/img/produk/{{$produk[$i]}}" width="240" height="180" alt="" style="object-fit: contain">
             </div>
             <div class="member-info" style="padding-top: 0.4em; padding-bottom: 0.8em;">
                 <small style="font-family: 'Segoe UI',Roboto;"><s>Rp. 50.000</s>

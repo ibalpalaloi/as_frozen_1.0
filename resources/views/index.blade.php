@@ -377,11 +377,11 @@
 <body>
 
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top" style="background: #ec1f25; border-bottom: none; box-shadow:0 1px 1px rgb(0 0 0 / 20%);">
+	<header id="header" class="fixed-top" style="background: linear-gradient(0deg, hsla(20, 70%, 52%, 1) 0%, hsla(358, 84%, 52%, 1) 100%); border-bottom: none; box-shadow:0 1px 1px rgb(0 0 0 / 20%);">
 		<div class="container d-flex align-items-center">
 			<h1 class="logo mr-auto">
 				<div style="">
-					<img src="<?=url('/')?>/public/assets/img/logo/logo2.png" style="width: 120%;background:#ec1f25;">
+					<img src="<?=url('/')?>/public/assets/img/logo/frozen_palu_white.png" style="width: 120%;">
 				</div>
 			</h1>
 			<div style="width: 100%; margin-left: 5%; margin-right: 5%;">
@@ -411,7 +411,7 @@
 							$nama = array('Bakso', 'Buah Sayur', 'Bumbu', 'Daging', 'Ikan', 'Kecap Saus', 'Kue', 'Lainnya', 'Roti', 'Sosis','Kecap Saus', 'Kue', 'Lainnya', 'Roti', 'Sosis');
 							$file = array('bakso.jpg', 'buah_sayur.jpg', 'bumbu.jpg', 'daging.jpg', 'ikan.jpg', 'kecap_saus.jpg', 'kue.jpg', 'lainnya.jpg', 'roti.jpg', 'sossis.jpg','kecap_saus.jpg', 'kue.jpg', 'lainnya.jpg', 'roti.jpg', 'sossis.jpg');
 							@endphp
-							@for ($i = 0; $i < count($file); $i++)
+							@for ($i = 0; $i < 12; $i++)
 							<a href="<?=url('/')?>/kategori/kategori" data-aos="zoom-in" data-aos-delay="200" style="width: 8%; display: flex; flex-direction: column;justify-content: center; align-items: center;">
 								<div class="icon-box" style="padding: 0px; background: none; box-shadow: none; width: 100%; display: flex;justify-content: center; flex-direction: column; align-items: center;">
 									@php
@@ -424,6 +424,26 @@
 							</a>
 							@endfor
 						</div>
+						<br>
+						<div class="icon-boxes" style="margin-top: 0em; display: flex; justify-content: space-between;"> 		
+							@php
+							$nama = array('Bakso', 'Buah Sayur', 'Bumbu', 'Daging', 'Ikan', 'Kecap Saus', 'Kue', 'Lainnya', 'Roti', 'Sosis','Kecap Saus', 'Kue', 'Lainnya', 'Roti', 'Sosis');
+							$file = array('bakso.jpg', 'buah_sayur.jpg', 'bumbu.jpg', 'daging.jpg', 'ikan.jpg', 'kecap_saus.jpg', 'kue.jpg', 'lainnya.jpg', 'roti.jpg', 'sossis.jpg','kecap_saus.jpg', 'kue.jpg', 'lainnya.jpg', 'roti.jpg', 'sossis.jpg');
+							@endphp
+							@for ($i = 0; $i < 12; $i++)
+							<a href="<?=url('/')?>/kategori/kategori" data-aos="zoom-in" data-aos-delay="200" style="width: 8%; display: flex; flex-direction: column;justify-content: center; align-items: center;">
+								<div class="icon-box" style="padding: 0px; background: none; box-shadow: none; width: 100%; display: flex;justify-content: center; flex-direction: column; align-items: center;">
+									@php
+									$url = url('/')."/public/assets/img/kategori_icon/$file[$i]";
+									@endphp
+									<div style="display: flex; justify-content: center; width: 100%; background-image: url('{{$url}}'); height: 70px; width: 70px; background-size: cover; border-radius: 50%; box-shadow:0 2px 5px rgb(0 0 0 / 40%); border: 2px solid #ec1f25;" >
+									</div>
+									<div style="text-align: center; font-size: 0.8em;">{{$nama[$i]}}</div>
+								</div>
+							</a>
+							@endfor
+						</div>
+
 						<div class="icon-boxes" style="margin-top: 0em; display: flex; justify-content: space-between; display: none;"> 		
 							@php
 							$nama = array('Bakso', 'Buah Sayur', 'Bumbu', 'Daging', 'Ikan', 'Kecap Saus', 'Kue', 'Lainnya', 'Roti', 'Sosis','Kecap Saus', 'Kue', 'Lainnya', 'Roti', 'Sosis');

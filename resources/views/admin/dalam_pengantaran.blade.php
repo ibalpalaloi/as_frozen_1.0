@@ -22,7 +22,7 @@
                       <span class="time" style="font-size: 15px"><i class="fas fa-clock"></i> 12:05</span>
                       <div class="timeline-header">
                           <span class="right badge badge-warning" style="font-size: 16px">COD</span>
-                          <span class="right badge badge-warning" style="font-size: 16px">Tranfer</span>
+                          <span class="right badge badge-warning" style="font-size: 16px">Diantarkan</span>
                       </div>
                       @php
                           $produk = ['Bakso Ikan', 'Fiesta chicken Nugget', 'Kulit Kebab'];
@@ -103,7 +103,7 @@
                         <span class="time" style="font-size: 15px"><i class="fas fa-clock"></i> 12:05</span>
                         <div class="timeline-header">
                             <span class="right badge badge-warning" style="font-size: 16px">COD</span>
-                            <span class="right badge badge-warning" style="font-size: 16px">Tranfer</span>
+                            <span class="right badge badge-warning" style="font-size: 16px">Diantarkan</span>
                         </div>
                         @php
                             $produk = ['Bakso Ikan', 'Fiesta chicken Nugget', 'Kulit Kebab'];
@@ -184,7 +184,7 @@
                         <span class="time" style="font-size: 15px"><i class="fas fa-clock"></i> 12:05</span>
                         <div class="timeline-header">
                             <span class="right badge badge-warning" style="font-size: 16px">COD</span>
-                            <span class="right badge badge-warning" style="font-size: 16px">Tranfer</span>
+                            <span class="right badge badge-warning" style="font-size: 16px">Diantarkan</span>
                         </div>
                         @php
                             $produk = ['Bakso Ikan', 'Fiesta chicken Nugget', 'Kulit Kebab'];
